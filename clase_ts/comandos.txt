@@ -1,0 +1,7 @@
+1 npm init -y
+2 npm i
+3 npm install eslint --save -dev 
+4 npx eslint --init
+5 New-Item -Path .eslintrc -ItemType File 
+6 npm run lint
+7 npm install --save-dev eslint@7.32.0 eslint-config-airbnb-base@14.2.1 eslint-config-airbnb-typescript@14.0.0 eslint-plugin-import@2.24.2 @typescript-eslint/eslint-plugin@4.29.3 @typescript-eslint/parser@4.29.3 --legacy-peer-deps
