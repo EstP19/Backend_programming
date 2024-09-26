@@ -1,5 +1,5 @@
 const studentName: string = 'Yesi Esteban Pantoja Cuellar';
-console.log(studentName, 'Student');
+console.log(`\n` + studentName, 'Student');
 const studentAge: number = 22;
 console.log(studentAge, 'Age');
 const studentAtive: boolean = true;
