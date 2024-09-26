@@ -1,28 +1,21 @@
-
 {
-    "parser": "@typescript-eslint/parser", //interpretar archivos TS, traducción de TS a JS
-    "extends": [
-      "airbnb-base",// aplicamos todas las reglas de JS
-      "airbnb-typescript/base",// extiende las reglas de JS a TS
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended"
-    ], //Ver hasta que punto puede llegar el eslint
-
-    "parserOptions": { // opciones de como vas a pasear
-      "project": "./tsconfig.json",
-      "tsconfigRootDir": "./",
-      "sourceType": "module"
-    },
-    "rules": {
-      "import/prefer-default-export": "off",
-      "class-methods-use-this": "off",
-      "import/no-extraneous-dependencies": "off",
-      "no-param-reassign": "off",
-      "no-throw-literal": "off",
-      "@typescript-eslint/no-throw-literal": "off",
-      "no-restricted-syntax": "off",
-      "max-len": "off"
-    }
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base"
+  ],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "class-methods-use-this": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-param-reassign": "off",
+    "no-throw-literal": "off",
+    "@typescript-eslint/no-throw-literal": "off",
+    "no-restricted-syntax": "off",
+    "max-len": "off",
+    "no-console": "off",
+    "quotes": ["error", "single"]
   }
-  
-  
+}

@@ -1,10 +1,10 @@
-const studentName = 'Yesi Esteban Pantoja Cuellar';
+const studentName: string = 'Yesi Esteban Pantoja Cuellar';
 console.log(studentName, 'Student');
-const studentAge = 22;
+const studentAge: number = 22;
 console.log(studentAge, 'Age');
-const studentAtive = true;
+const studentAtive: boolean = true;
 console.log(studentAtive, 'Ative');
-const studentClassmate = [
+const studentClassmate: any = [
   {
     name: 'Romer Almeida',
     age: 20,
