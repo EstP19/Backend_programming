@@ -1,2 +1,1 @@
-import './types/example';
-import './types/typebasics';
+import './types/Trial_functions_TypeScript';

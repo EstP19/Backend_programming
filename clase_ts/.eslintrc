@@ -16,7 +16,7 @@
     "no-restricted-syntax": "off",
     "max-len": "off",
     "no-console": "off",
-    "quotes": ["error", "single"],
-    "allowForLoopAfterthoughts": true 
+    "quotes": ["error", "single"]
+    
   }
 }
