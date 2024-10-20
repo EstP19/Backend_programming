@@ -52,7 +52,7 @@ console.log(Day[10], 'day');
 function saludar() {
     const aux = [1, 2, 3, 4, 5, 6];
     let sum = 0;
-    for (let i = 0; i < aux.length; i++) {
+    for (let i = 0; i < aux.length; i = +1) {
         sum += aux[i];
     }
     console.log(`Hola, la suma es: ${sum}`);
@@ -64,28 +64,31 @@ function llegada() {
 console.log(`Books: ${books}`, `DateOne: ${dateOne}`);
 saludar();
 console.log(llegada());
-let car = {
+const car = {
     make: 'Toyota',
     model: 'Camryn',
-    year: 2000
+    year: 2000,
 };
-let pets = {
+const pets = {
     name: 'rex',
     specie: 'canino',
     state: true,
-    age: 2
+    age: 2,
 };
+console.log(car, 'car', '\n', pets, 'pets');
 let nothing = null;
 nothing = 'Hello, world';
-let notDefined = undefined;
+const notDefined = undefined;
+console.log(nothing, 'nothing', '\n', notDefined, 'notDefined');
 let value = false;
 value = 'true';
 console.log(`El valor es: ${value}`);
 const mixed = [
     [1, 'one'],
     [2, 'two'],
-    [3, 'three']
+    [3, 'three'],
 ];
+console.log(mixed, 'mixed');
 const colors = ['red', 'green', 'blue'];
 console.log(colors[0], 'colorsOne');
 console.log(colors[1], 'colorsTwo');
@@ -97,6 +100,7 @@ const sliced = numberOne.slice(1, 4);
 const square = numberOne.map((num) => num % 2 === 0);
 const evenNumber = numberOne.filter((num) => num % 2 === 0);
 const sum = numberOne.reduce((acumulador, currentValue) => acumulador + currentValue, 0);
+console.log(index, 'index', '\n', sliced, 'sliced', '\n', square, 'square', '\n', evenNumber, 'evenNumber', '\n', sum, 'sum');
 const sentences = 'Hello world TypeScript is great';
 const words = sentences.split(' ');
 console.log(words);
@@ -109,22 +113,27 @@ const foundNumber = numbersTwo.find((num) => num > 25);
 const foundIndex = numbersTwo.findIndex((num) => num > 25);
 const allPositve = numbersTwo.every((num) => num > 0);
 const someGreaterThan40 = numbersTwo.some((num) => num > 40);
+console.log(foundNumber, 'foundNumber', '\n', foundIndex, 'foundIndex', '\n', allPositve, 'allPositve', '\n', someGreaterThan40, 'someGreaterThan40');
 const array1 = [1, 2, 3, 4, 5];
 const array2 = [6, 7, 8, 9, 10];
 const concatNumbers = array1.concat(array2);
 const pushNumbers = array1.push(...array2);
+console.log(concatNumbers, 'concatNumbers', pushNumbers, 'pushNumber');
 const unsortedNumbers = [11, 12, 13, 14, 15, 16];
 const sortedNumbers = unsortedNumbers.sort((a, b) => a - b);
 const nameS = ['Romer', 'Nico', 'Juan', 'Esteban'];
 const sortName = nameS.sort();
+console.log(sortName, 'sort');
 const reversedNumbers = sortedNumbers.reverse();
-let auxNumbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 2, 1];
+console.log(reversedNumbers, 'reversedNumbers');
+const auxNumbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 2, 1];
 let aut;
-for (let i = 0; i < auxNumbersArray.length; i++) {
+for (let i = 0; i < auxNumbersArray.length; i = +1) {
     if (!(aut.includes(auxNumbersArray[i]))) {
         aut.push(auxNumbersArray[i]);
     }
 }
 console.log(aut, 'aut');
 const hasFour = numbersTwo.includes(4);
+console.log(hasFour, 'hasFour', '\n');
 //# sourceMappingURL=class_25.js.map
